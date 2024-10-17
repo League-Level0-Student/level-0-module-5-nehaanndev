@@ -17,9 +17,9 @@ public class Snowflake {
 		// #3. Put the robot's pen down
 		rob.penDown();
 		// #4. Set the robot’s speed to 5
-		rob.setSpeed(5);
+		rob.setSpeed(500);
 		// #5. use a for loop below to do everything ( #6, #7, #8, #9, #12, #13, #14 ) 6 times (use i as the counter)
-		for(int i =0;i<5;i++) {
+		for(int i =0;i<6;i++) {
 			// #6. Set the pen color to black
 
 			rob.setPenColor(0,0,0);
@@ -31,23 +31,26 @@ public class Snowflake {
 			
 			// #12. set the pen color to blue for even numbers of i
 			if (i%2==0) {
-				rob.setPenColor(0,0, 10);
+				rob.setPenColor(50,50, 1000);
 			}
 			
 			// #13. set the pen color to red for all odd numbers of i
 			if (i%2!=0) {
-				rob.setPenColor(10,0, 0);
+				rob.setPenColor(1000,50, 50);
 			}
 			
 			// #9. Use a for loop to do everything (#10, #11) 6 times ( use j as a counter )
-			
+			for (int j = 0; j<6;j++) {
+				rob.turn(-60);
+				rob.move(50);
+			}
 			
 					// #10. turn the robot to the left by 60
 		
 					
 					// #11. move the robot by 50 (play the start button)
 					
-				
+			rob.setPenColor(0,0, 0);
 			
 			// #14. set the pen color to black
 				
