@@ -1,5 +1,7 @@
 package _04_practice._1_skill_practice;
 
+import java.util.Random;
+
 import javax.swing.JOptionPane;
 
 public class SkillPractice {
@@ -37,7 +39,11 @@ public class SkillPractice {
 	}
 
 	void skill3() { // Get a random number that is less than 20 and print it to the console
-
+		Random rand = new Random();
+		int ranNum = rand.nextInt(20);
+		int randNum = rand.nextInt(10);
+		int diff = ranNum-randNum;
+		JOptionPane.showMessageDialog(null, "The difference between " + ranNum + " and " + randNum + " is " + diff);
 // Get another random number that is less than 10 and print it to the console
 
 // Using a pop-up, tell the user the difference between the numbers // Hint: use subtraction
