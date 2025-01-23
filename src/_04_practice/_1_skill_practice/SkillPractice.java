@@ -51,22 +51,35 @@ public class SkillPractice {
 	}
 
 	void skill4() { // In a pop-up, ask the user for the city they live in
+		String city = JOptionPane.showInputDialog("What city do you live in?");
 
 // If they answered "San Diego", tell them they live in America's Finest City
-
+		if (city.equals("San Diego")) {
+			JOptionPane.showMessageDialog(null, "You live in America's finest city.");
+		}else {
 // Otherwise, tell them to move to San Diego
-
+			JOptionPane.showMessageDialog(null, "You should move to San Diego.");
+		}
 // Create a variable - cars - and initialize it to the number of cars your family has. // If there are 0 cars, use a pop-up to display, "I bet you use public transportation."
-
+		int cars = 3;
+		if (cars==0) {
+			JOptionPane.showMessageDialog(null, "I bet you use public transportation.");
+		}
 // If there is 1 car, use a pop-up to display the make/model of the car
+		if (cars == 1) {
+			JOptionPane.showMessageDialog(null, "Tesla Model 3");
+		}else {
+		JOptionPane.showMessageDialog(null, "There is " + cars*4 + " wheels in between all of your cars.");
+		}
 
 // If there is more than 1 car, use a pop-up to display how many wheels the // cars have between them.
 
 	}
 
 	void skill5() { // In a pop-up, ask the user for the name of their school
-
+		String schoolN = JOptionPane.showInputDialog("What it is the name of your school?");
 // In another pop-up, tell the user, that their school is a fantastic school. // You must include the name of the school in the message.
+		JOptionPane.showMessageDialog(null, schoolN + " is a fantastic school!");
 
 	}
 }
