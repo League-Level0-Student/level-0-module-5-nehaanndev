@@ -24,6 +24,8 @@ public class Code4Life {
 			JOptionPane.showMessageDialog(null, "Stop watching Youtube and code.");
 		} else if (hourSpent <= 5 && hourSpent >= 3 ) {
 			JOptionPane.showMessageDialog(null, " You are a Code Ninja!");
+		} else{
+			playBatmanTheme();
 		}
 		// 3. If it is greater than or equal to 3 AND less than or equal to 5, tell them
 		// they're a Code Ninja

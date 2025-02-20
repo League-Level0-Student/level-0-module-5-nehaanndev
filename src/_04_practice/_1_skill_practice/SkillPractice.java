@@ -13,6 +13,7 @@ public class SkillPractice {
 		skills.skill3();
 		skills.skill4();
 		skills.skill5();
+		
 	}
 
 	void skill1() {
